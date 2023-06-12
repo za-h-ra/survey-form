@@ -21,29 +21,32 @@
 
     <form action="" id="survey-form" class="form">
       <div class="form-control">
-        <label for="name">Name</label>
+        <label for="name" id="name-label">Name</label>
         <input
           type="text"
           id="name"
           name="name"
           placeholder="Your full name"
+          value="name"
           required
         />
-        <label for="email">Email</label>
+        <label for="email" id="email-label">Email</label>
         <input
           type="email"
           name="email"
           id="email"
           placeholder="Enter your email"
+          value="email"
           required
         />
 
-        <label for="age">What's your age?</label>
+        <label for="number" id="number-label">What's your age?</label>
         <input
           type="number"
-          id="age"
+          id="number"
           name="age"
           placeholder="Age"
+          value="age"
           min="1"
           max="100"
         />
@@ -51,7 +54,7 @@
 
       <div class="form-activity-level">
         <label for="fitness-level">Describe your activity level:</label>
-        <select name="fitness-level" id="fitness-level">
+        <select name="fitness-level" id="dropdown">
           <option value="Sedentary">Sedentary</option>
           <option value="Lightly Active">Lightly Active</option>
           <option value="Moderately Active">Moderately Active</option>
@@ -100,6 +103,37 @@
             class="rad-input"
           />
           <label for="pescatarian" class="rad-label">Pescatarian</label>
+        </div>
+      </div>
+
+      <div class="reference">
+        <h2 class="secondary-heading">Where Did You Hear About Us?</h2>
+        <div>
+          <input
+            type="checkbox"
+            id="instagram"
+            value="instagram"
+            name="reference"
+          />
+          <label for="instagram">Instagram</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="twitter"
+            value="twitter"
+            name="reference"
+          />
+          <label for="twitter">Twitter</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="newsletter"
+            value="newsletter"
+            name="reference"
+          />
+          <label for="newsletter">Newsletter</label>
         </div>
       </div>
 
