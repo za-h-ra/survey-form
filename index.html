@@ -19,7 +19,7 @@
       <img src="assets/yoga.png" />
     </div>
 
-    <form action="" id="survey-form">
+    <form action="" id="survey-form" class="form">
       <div class="form-control">
         <label for="name">Name</label>
         <input
@@ -58,33 +58,57 @@
           <option value="Very Active">Very Active</option>
         </select>
       </div>
+
       <div class="form-diet-type">
         <h2 class="secondary-heading">Diet Type</h2>
-        <input type="radio" id="standard" name="diet-type" value="standard" />
-        <label for="standard">Standard</label>
-        <input type="radio" id="vegan" name="diet-type" value="vegan" />
-        <label for="standard">Vegan</label>
-        <input
-          type="radio"
-          id="vegetarian"
-          name="diet-type"
-          value="vegetarian"
-        />
-        <label for="standard">Vegetarian</label>
-        <input
-          type="radio"
-          id="pescatarian"
-          name="diet-type"
-          value="pescatarian"
-        />
-        <label for="standard">Pescatarian</label>
+        <div class="diet-options">
+          <input
+            type="radio"
+            id="standard"
+            name="diet-type"
+            value="standard"
+            class="rad-input"
+          />
+          <label for="standard" class="rad-label">Standard</label>
+        </div>
+        <div class="diet-options">
+          <input
+            type="radio"
+            id="vegan"
+            name="diet-type"
+            value="vegan"
+            class="rad-input"
+          />
+          <label for="vegan" class="rad-label">Vegan</label>
+        </div>
+        <div class="diet-options">
+          <input
+            type="radio"
+            id="vegetarian"
+            name="diet-type"
+            value="vegetarian"
+            class="rad-input"
+          />
+          <label for="vegetarian" class="rad-label">Vegetarian</label>
+        </div>
+        <div class="diet-options">
+          <input
+            type="radio"
+            id="pescatarian"
+            name="diet-type"
+            value="pescatarian"
+            class="rad-input"
+          />
+          <label for="pescatarian" class="rad-label">Pescatarian</label>
+        </div>
       </div>
+
       <div class="form-textarea">
         <h2 class="secondary-heading">Anything else we should know?</h2>
         <textarea placeholder="text here"></textarea>
       </div>
 
-      <button id="submit">Submit</button>
+      <button id="submit" class="form-button">Submit</button>
     </form>
   </body>
 </html>
