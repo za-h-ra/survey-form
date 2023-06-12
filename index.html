@@ -4,8 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/assets/purple-picasso.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/yoga.png" />
     <title>Survey</title>
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">New Member Fitness Survey</h1>
+    <img src="assets/yoga.png" />
+    <p id="description">
+      We appreciate your support in helping us discover your fitness needs
+    </p>
+
+    <form action="" id="survey-form">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your full name"
+        required
+      />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="age">What's your age?</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="Age"
+        min="1"
+        max="100"
+      />
+
+      <label for="fitness-level">Describe your activity level:</label>
+      <select name="fitness-level" id="fitness-level">
+        <option value="Sedentary">Sedentary</option>
+        <option value="Lightly Active">Lightly Active</option>
+        <option value="Moderately Active">Moderately Active</option>
+        <option value="Very Active">Very Active</option>
+      </select>
+
+      <h2>Diet Type</h2>
+      <input type="radio" id="standard" name="diet-type" value="standard" />
+      <label for="standard">Standard</label>
+      <input type="radio" id="vegan" name="diet-type" value="vegan" />
+      <label for="standard">Vegan</label>
+      <input type="radio" id="vegetarian" name="diet-type" value="vegetarian" />
+      <label for="standard">Vegetarian</label>
+      <input
+        type="radio"
+        id="pescatarian"
+        name="diet-type"
+        value="pescatarian"
+      />
+      <label for="standard">Pescatarian</label>
+
+      <h2>Anything else we should know?</h2>
+      <textarea placeholder="text here"></textarea>
+
+      <button id="submit">Submit</button>
+    </form>
+  </body>
 </html>
